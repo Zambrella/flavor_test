@@ -23,7 +23,7 @@ class CharacterLocation extends BeamLocation {
           key: const ValueKey('characters}'),
           child: CharactersListScreen(),
         ),
-      if (state.pathParameters.containsValue('characterId'))
+      if (state.pathParameters.containsKey('characterId'))
         BeamPage(
           key: ValueKey('characterDetails-${state.pathParameters['characterId']}'),
           child: CharacterDetailsScreen(),
